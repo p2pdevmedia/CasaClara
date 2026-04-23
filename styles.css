@@ -58,11 +58,16 @@ a {
 
 .brand {
   text-decoration: none;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
   transition: transform 0.2s ease;
+}
+
+.brand img {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 999px;
+  display: block;
 }
 
 .brand:hover {
