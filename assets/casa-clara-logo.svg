@@ -3,7 +3,7 @@
   <desc id="desc">Círculo rojo con texto Casa Clara en color crema.</desc>
   <circle cx="256" cy="256" r="245" fill="#B13744"/>
   <g fill="#F3D8CE" font-family="Inter, Arial, sans-serif" font-weight="700" text-anchor="middle">
-    <text x="256" y="244" font-size="94" letter-spacing="1">casa</text>
-    <text x="256" y="323" font-size="94" letter-spacing="1">clara</text>
+    <text x="256" y="248" font-size="112" letter-spacing="1">casa</text>
+    <text x="256" y="342" font-size="112" letter-spacing="1">clara</text>
   </g>
 </svg>
