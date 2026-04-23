@@ -1,0 +1,151 @@
+:root {
+  --bg: #fff9f5;
+  --surface: #ffffff;
+  --text: #3a2f2b;
+  --muted: #705d55;
+  --accent: #b36452;
+  --accent-dark: #8d4a3c;
+  --line: #ecd9d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: #2a211f;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+a {
+  color: inherit;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin-inline: auto;
+}
+
+.hero {
+  background: linear-gradient(180deg, #fcefe9 0%, #fff9f5 100%);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero__content {
+  padding: 5rem 0 4rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: clamp(2.3rem, 6vw, 4rem);
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  max-width: 60ch;
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.15s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn--ghost {
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section--alt {
+  background: #fff;
+  border-block: 1px solid var(--line);
+}
+
+.section--highlight {
+  background: #f8e6df;
+  border-block: 1px solid #e3c1b5;
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 1.5rem 0 0.75rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.note,
+.contact {
+  color: var(--muted);
+}
+
+.celebration ul {
+  padding-left: 1.1rem;
+}
+
+.price {
+  font-size: 1.1rem;
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0;
+  text-align: center;
+  color: var(--muted);
+}
